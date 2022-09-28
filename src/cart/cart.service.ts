@@ -17,7 +17,7 @@ export class CartService {
   async addBookToCart(
     userId: number,
     bookAddCartDto: BookAddCartDto,
-  ): GlobalResponseType {
+  ) {
     try {
       const book = await this.prisma.book.findFirst({
         where: {

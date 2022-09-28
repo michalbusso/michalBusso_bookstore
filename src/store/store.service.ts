@@ -41,8 +41,7 @@ export class StoreService {
       await this.prisma.store.create({
         data:{
           userId: userId,
-          
-
+          ...dto,        
         }
       });
 

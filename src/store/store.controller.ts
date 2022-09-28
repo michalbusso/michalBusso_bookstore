@@ -49,10 +49,10 @@ export class StoreController {
     @GetUser('id') userId: number,
     @Body() dto: CreateStoreDto,
   ) {
-    //return this.storeService.createStore(
-    //  userId,
-    //  dto,
-    //);
+   // return this.storeService.createStore(
+     // userId,
+      //dto,
+   // );
   }
 
   @Patch(':id')
