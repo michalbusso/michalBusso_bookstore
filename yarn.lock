@@ -796,10 +796,10 @@
   "resolved" "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-3.8.0-43.34df67547cf5598f5a6cd3eb45f14ee70c3fb86f.tgz"
   "version" "3.8.0-43.34df67547cf5598f5a6cd3eb45f14ee70c3fb86f"
 
-"@prisma/engines@3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e":
-  "integrity" "sha512-NHlojO1DFTsSi3FtEleL9QWXeSF/UjhCW0fgpi7bumnNZ4wj/eQ+BJJ5n2pgoOliTOGv9nX2qXvmHap7rJMNmg=="
-  "resolved" "https://registry.npmjs.org/@prisma/engines/-/engines-3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e.tgz"
-  "version" "3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e"
+"@prisma/engines@3.8.0-43.34df67547cf5598f5a6cd3eb45f14ee70c3fb86f":
+  "integrity" "sha512-bHYubuItSN/DGYo36aDu7xJiJmK52JOSHs4MK+KbceAtwS20BCWadRgtpQ3iZ2EXfN/B1T0iCXlNraaNwnpU2w=="
+  "resolved" "https://registry.npmjs.org/@prisma/engines/-/engines-3.8.0-43.34df67547cf5598f5a6cd3eb45f14ee70c3fb86f.tgz"
+  "version" "3.8.0-43.34df67547cf5598f5a6cd3eb45f14ee70c3fb86f"
 
 "@sinonjs/commons@^1.7.0":
   "integrity" "sha512-xkNcLAn/wZaX14RPlwizcKicDk9G3F8m2nU3L7Ukm5zBgTwiT0wsoFAHx9Jq56fJA1z/7uKGtCRu16sOUCLIHQ=="
@@ -2646,6 +2646,13 @@
     "locate-path" "^5.0.0"
     "path-exists" "^4.0.0"
 
+"fix@^0.0.3":
+  "integrity" "sha512-nDbGTpfpPiWYuJ2qwrF2Qxqga8ANe3BV31vFA943FmEvX9iUROH3YmCOM4aq3DPZWF2WsKHoH9+Gw3qLdXfcSA=="
+  "resolved" "https://registry.npmjs.org/fix/-/fix-0.0.3.tgz"
+  "version" "0.0.3"
+  dependencies:
+    "pipe" "0.0.1"
+
 "flat-cache@^3.0.4":
   "integrity" "sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg=="
   "resolved" "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
@@ -4389,6 +4396,11 @@
   "resolved" "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   "version" "2.3.1"
 
+"pipe@0.0.1":
+  "integrity" "sha512-8tESQnbeUKIuET8aTNt3HL0EG7RuPT7C8gDrZ2lK2AjEUi7TOu6NPaJvk2Voe+tc7NkBqe4HRdftDA6w+caAvg=="
+  "resolved" "https://registry.npmjs.org/pipe/-/pipe-0.0.1.tgz"
+  "version" "0.0.1"
+
 "pirates@^4.0.4":
   "integrity" "sha512-ZIrVPH+A52Dw84R0L3/VS9Op04PuQ2SEoJL6bkshmiTic/HldyW9Tf7oH5mhJZBK7NmDx27vSMrYEXPXclpDKw=="
   "resolved" "https://registry.npmjs.org/pirates/-/pirates-4.0.4.tgz"
@@ -4445,12 +4457,12 @@
     "ansi-styles" "^5.0.0"
     "react-is" "^17.0.1"
 
-"prisma@*", "prisma@^3.15.2":
-  "integrity" "sha512-nMNSMZvtwrvoEQ/mui8L/aiCLZRCj5t6L3yujKpcDhIPk7garp8tL4nMx2+oYsN0FWBacevJhazfXAbV1kfBzA=="
-  "resolved" "https://registry.npmjs.org/prisma/-/prisma-3.15.2.tgz"
-  "version" "3.15.2"
+"prisma@*", "prisma@^3.8.1":
+  "integrity" "sha512-Q8zHwS9m70TaD7qI8u+8hTAmiTpK+IpvRYF3Rgb/OeWGQJOMgZCFFvNCiSfoLEQ95wilK7ctW3KOpc9AuYnRUA=="
+  "resolved" "https://registry.npmjs.org/prisma/-/prisma-3.8.1.tgz"
+  "version" "3.8.1"
   dependencies:
-    "@prisma/engines" "3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e"
+    "@prisma/engines" "3.8.0-43.34df67547cf5598f5a6cd3eb45f14ee70c3fb86f"
 
 "process-nextick-args@~2.0.0":
   "integrity" "sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag=="
