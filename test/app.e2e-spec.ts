@@ -45,7 +45,7 @@ describe('App e2e', () => {
 
   describe('Auth', () => {
     const dto: AuthDto = {
-      email: 'vlad@gmail.com',
+      email: 'micheth.y@gmail.com',
       password: '123',
     };
     describe('Signup', () => {
@@ -168,7 +168,7 @@ describe('App e2e', () => {
     describe('Create book', () => {
       const dto: CreateBookDto = {
         title: 'First Book',
-        link: 'https://www.youtube.com/watch?v=d6WC5n9G_sM',
+        link: 'https://www.youtube.com/watch?v=d6WC5n9jygjG_sM',
       };
       it('should create book', () => {
         return pactum
