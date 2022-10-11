@@ -1,5 +1,6 @@
 import {
   IsNotEmpty,
+  IsNumber,
   IsOptional,
   IsString,
 } from 'class-validator';
@@ -16,4 +17,9 @@ export class EditBookDto {
   @IsString()
   @IsOptional()
   author?: string;
+
+
+  @IsNumber()
+  @IsNotEmpty()
+  categoryId?: number;
 }

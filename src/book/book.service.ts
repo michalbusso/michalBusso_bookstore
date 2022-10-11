@@ -2,6 +2,7 @@ import {
   ForbiddenException,
   Injectable,
 } from '@nestjs/common';
+import { throws } from 'assert';
 import { PrismaService } from '../prisma/prisma.service';
 import {
   CreateBookDto,
@@ -19,7 +20,22 @@ export class BookService {
       },
     });
   }
-
+  getBookByCategoryId(
+    categoryId:number,
+    orderBy: string,
+    asc: boolean,
+    userId:number,
+  ){
+  return this.prisma.book.findMany({
+    where: {
+      categoryId,
+      userId
+    },
+      orderBy: {
+     [orderBy]: asc?'asc':'desc', 
+    }
+   })
+  }
   getBookById(
     userId: number,
     bookId: number,

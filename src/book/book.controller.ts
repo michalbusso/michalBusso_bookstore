@@ -6,9 +6,12 @@ import {
   HttpCode,
   HttpStatus,
   Param,
+  ParseBoolPipe,
   ParseIntPipe,
+  ParseUUIDPipe,
   Patch,
   Post,
+  Query,
   UseGuards,
 } from '@nestjs/common';
 import { GetUser } from '../auth/decorator';
@@ -17,6 +20,7 @@ import { BookService } from './book.service';
 import {
   CreateBookDto,
   EditBookDto,
+  GetBookDto,
 } from './dto';
 
 @UseGuards(JwtGuard)
@@ -27,11 +31,26 @@ export class BookController {
   ) {}
 
   @Get()
-  getBooks(@GetUser('id') userId: number) {
+  getBooks(@GetUser('id') userId: number)
+ {
     return this.bookService.getBooks(
       userId,
     );
   }
+
+  @Get('category')
+  getBookByCategoryId(
+    @GetUser('id') userId: number,
+   @Body() dto:GetBookDto)
+    {
+    return this.bookService.getBookByCategoryId(
+      dto.categoryId,
+      dto.orderBy,
+      dto.asc,
+      userId,
+    );
+  }
+
 
   @Get(':id')
   getBookById(

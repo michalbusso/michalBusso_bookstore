@@ -31,6 +31,7 @@ model Book {
   author      String
   userId      Int
   user        User     @relation(fields: [userId], references: [id])
+  categoryId  Int
 
   Cart  Cart[]
   Store Store[]
