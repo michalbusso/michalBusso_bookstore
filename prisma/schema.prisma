@@ -1,5 +1,6 @@
 generator client {
   provider = "prisma-client-js"
+
 }
 
 datasource db {
@@ -19,6 +20,7 @@ model User {
 
   Cart  Cart[]
   Store Store[]
+
   @@map("users")
 }
 
@@ -35,6 +37,7 @@ model Book {
 
   Cart  Cart[]
   Store Store[]
+
   @@map("books")
 }
 
@@ -61,7 +64,6 @@ model Store {
   user      User     @relation(fields: [userId], references: [id])
   bookId    Int
   book      Book     @relation(fields: [bookId], references: [id])
-
 
   @@map("stores")
 }
